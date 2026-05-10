@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>진보당 양미자 사상구(가) 구의원 후보</title>
+<meta name="description" content="사상구(가) 구의원 후보 양미자 공식 홈페이지입니다.">
+<link rel="icon" type="image/png" href="./assets/thumbnail.png">
+<meta property="og:title" content="진보당 양미자 사상구(가) 구의원 후보">
+<meta property="og:description" content="감전·괘법·삼락·덕포1,2 주민을 위해 실천하는 일꾼, 양미자와 함께해주세요!">
+<meta property="og:url" content="https://busanjinbo.github.io/sasangymj/">
+<meta property="og:image" content="https://busanjinbo.github.io/sasangymj/assets/thumbnail.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<!-- Twitter Card 설정 (텔레그램, 트위터 최적화) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="진보당 양미자 사상구(가) 구의원 후보">
+<meta name="twitter:description" content="감전·괘법·삼락·덕포1,2 주민을 위해 실천하는 일꾼, 양미자와 함께해주세요!">
+<meta name="twitter:image" content="https://busanjinbo.github.io/sasangymj/assets/thumbnail.png">
+<!-- Pretendard 폰트 (고급스럽고 가독성 뛰어남) -->
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Tailwind 설정 -->
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Pretendard', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        primary: '#ffffff', // 메인 배경 (흰색)
+        secondary: '#addef8', // 메인/서브 테마 넓은 면적 (하늘색)
+        secondarydark: '#7bc1e8', // 텍스트 등 가독성을 위한 하늘색 톤
+        point: '#e60012', // 강조/복사버튼 용도 (빨간색 - 극소량)
+        dark: '#1e293b', // 주요 텍스트 
+        graytext: '#475569', // 부가 텍스트
+        graylight: '#f8fafc', // 보조 배경
+      }
+    }
+  }
+}
+</script>
+<style>
+body {
+  font-family: 'Pretendard', sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+  word-break: keep-all; 
+}
+html {
+  scroll-padding-top: 70px; 
+}
+.img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* 아코디언 관련 애니메이션 */
+.donate-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+}
+.donate-details.active {
+  max-height: 800px;
+  opacity: 1;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+</style>
+</head>
+<body class="bg-primary antialiased">
+<!-- 0. 상단 네비게이션바 -->
+<nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur shadow-sm z-50 border-b-4 border-secondary transition-all">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+<div class="flex justify-between items-center h-16 md:h-20">
+<a href="#" class="flex items-center gap-2 group">
+<!-- 진보당 로고 -->
+<img src="./assets/logo.png" alt="진보당 로고" class="h-5 md:h-7 w-auto object-contain">
+<div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-secondary flex items-center justify-center text-dark font-extrabold text-lg border border-white shadow-sm">
+5
+</div>
+<span class="text-xl md:text-2xl font-black tracking-tight text-dark group-hover:text-secondarydark transition-colors">
+양미자 구의원 후보
+</span>
+</a>
+<div class="hidden md:flex space-x-6 items-center">
+<a href="#hero" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">홈</a>
+<a href="#donate" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">후원안내</a>
+<a href="#about" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">후보소개</a>
+<a href="#activity" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">지역활동</a>
+<a href="#pledge" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">공약안내</a>
+</div>
+<button id="mobile-menu-btn" class="md:hidden text-dark p-2 focus:outline-none">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- 모바일 드롭다운 -->
+<div id="mobile-menu" class="hidden md:hidden bg-blue-50 border-t border-secondary/30 drop-shadow-lg">
+<div class="flex flex-col px-4 pt-2 pb-6 space-y-2">
+<a href="#hero" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">홈</a>
+<a href="#donate" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">후원안내</a>
+<a href="#about" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">후보소개</a>
+<a href="#activity" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">지역활동</a>
+<a href="#pledge" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">공약안내</a>
+</div>
+</div>
+</nav>
+<!-- 1. 메인 히어로 섹션 -->
+<header id="hero" class="relative w-full mt-16 md:mt-20 pt-10 md:pt-0 md:h-[80vh] min-h-[600px] bg-sky-50 overflow-hidden flex items-center">
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary rounded-full opacity-40 blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
+<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary rounded-full opacity-20 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+<div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row shadow-none items-center justify-between">
+<!-- 좌측 텍스트 -->
+<div class="w-full md:w-3/5 text-center md:text-left z-20 md:pr-4 pt-8 md:pt-0">
+<div class="inline-flex items-center justify-center gap-2 mb-4">
+<span class="px-3 py-1 bg-point text-white font-black text-sm md:text-base rounded-md shadow-sm">기호 5번</span>
+<span class="text-lg md:text-xl font-bold text-secondarydark">감전·괘법·삼락·덕포1,2</span>
+</div>
+<!-- 메인 타이틀 -->
+<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-dark leading-tight tracking-tight mb-4 break-keep">
+일하는 구의원<br>
+<span class="text-secondarydark">양미자</span>
+</h1>
+<!-- 서브 설명 -->
+<p class="text-xl md:text-2xl text-graytext font-medium break-keep mb-8 bg-white/60 inline-block px-3 py-1 rounded-lg">
+사상구의회 의원선거 가선거구
+</p>
+</div>
+<!-- 우측 후보자 사진 (4:5 아치형 디자인 강제 적용) -->
+<div class="w-10/12 sm:w-1/2 md:w-2/5 flex justify-center mt-12 md:mt-0 relative z-10">
+<!-- 이미지가 4:5 꽉 차는 아치형으로 그려집니다. 배경 여백 문제를 완벽히 해결! -->
+<img src="./assets/profile.png" alt="홍기호" class="w-full max-w-[400px] h-auto object-cover rounded-t-full rounded-b-2xl shadow-xl shadow-secondary/30 bg-secondary/20" style="aspect-ratio: 4/5;">
+</div>
+</div>
+</header>
+<!-- 2. 후원 안내 섹션 -->
+<section id="donate" class="py-20 md:py-28 bg-white relative">
+<div class="max-w-4xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-10">
+<h2 class="text-4xl md:text-5xl font-black text-dark mb-4 break-keep">양미자에게 힘이 되어주세요.</h2>
+<div class="w-16 h-1.5 bg-secondary mx-auto mb-6"></div>
+<h3 class="text-xl md:text-2xl text-secondarydark font-bold mb-6 break-keep">
+오직, 사상구 주민에게만 빚지고 싶습니다
+</h3>
+<p class="text-graytext text-lg md:text-xl font-medium space-y-2 break-keep bg-sky-50 py-6 px-4 rounded-xl border border-sky-100">
+<span class="block text-dark font-bold">주민에게 빚져야 주민께 봉사로 갚습니다.</span>
+<span class="block">10만원까지는 연말정산 시 <span class="text-point font-bold">전액 돌려받습니다.</span></span>
+<span class="block">감전·괘법·삼락·덕포1,2 주민의 후원이 간절합니다.</span>
+</p>
+</div>
+<!-- 계좌 정보 및 복사 버튼 -->
+<div class="bg-white border-2 border-secondary rounded-2xl p-6 md:p-10 shadow-lg text-center mb-8 relative">
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+<span id="account-number" class="text-3xl md:text-4xl font-black text-dark tracking-wider cursor-pointer hover:text-secondary transition-colors" onclick="copyAccount()" title="클릭하여 계좌번호 복사">부산은행 101-2096-0117-08</span>
+</div>
+<p class="text-2xl font-bold text-gray-700 mb-8">
+예금주 : 양미자후원회(사상구의원선거)
+</p>
+<!-- 빨간색 포인트 컬러 버튼 -->
+<button onclick="copyAccount()" class="inline-flex items-center justify-center gap-2 bg-point text-white text-lg font-bold px-8 py-4 rounded-xl shadow-lg shadow-point/30 hover:bg-red-700 active:scale-95 transition-all w-full sm:w-auto">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+계좌 복사하기
+</button>
+</div>
+<!-- 후원상세안내 아코디언 -->
+<div class="mt-4 bg-graylight rounded-xl border border-gray-200">
+<button id="donate-detail-btn" class="w-full flex items-center justify-between p-5 text-lg md:text-xl font-bold text-dark hover:bg-sky-50 transition-colors rounded-xl focus:outline-none">
+<span>후원상세안내</span>
+<svg id="donate-detail-icon" class="w-6 h-6 text-graytext transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+</button>
+<div id="donate-detail-content" class="donate-details px-5 bg-white rounded-b-xl text-graytext text-base md:text-lg border-t border-gray-200">
+<ul class="list-disc pl-5 space-y-3 font-medium">
+<li>10만원까지 전액 세액공제(연말정산 시 전액 돌려받음)</li>
+<li>10만원 초과분은 연말정산 시 15% 세액공제 됩니다.</li>
+<li>1인당 연간 최대 100만원까지 후원이 가능합니다.<br><span class="text-sm md:text-base text-gray-500">(법인, 단체, 외국인, 교원, 공무원은 후원이 불가)</span></li>
+<li>익명기부는 1회 10만원 이하, 연간 120만원 이하 후원 가능합니다.</li>
+<li class="rounded p-4 bg-sky-50 text-dark border-l-4 border-secondary font-bold">
+영수증 발행 : 이름 / 주민번호 / 전화번호 / 주소 / 후원금액 / 입금일<br>
+<span class="text-xl text-secondarydark break-words cursor-pointer hover:font-black transition-all" onclick="copyPhoneNumber(this.innerText)" title="클릭하여 번호 복사">010-2577-3348</span>로 문자 보내주세요
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. 후보 소개 섹션 -->
+<section id="about" class="py-20 md:py-28 bg-white border-t-2 border-secondary border-opacity-30">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="flex flex-col lg:flex-row gap-10">
+<!-- Left Column: Title and Activities -->
+<div class="w-full lg:w-1/2 flex flex-col space-y-8">
+<!-- Titles -->
+<div class="text-center sm:text-left">
+<h2 class="text-3xl md:text-4xl font-black text-point mb-2 break-keep">
+일하는 구의원
+</h2>
+<h3 class="text-2xl md:text-3xl font-black text-[#1e2b4d] tracking-tight break-keep">
+준비된 봉사일꾼 양미자!
+</h3>
+</div>
+<!-- Activities List -->
+<div class="space-y-8">
+<!-- Activity 1 -->
+<div class="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+<img src="./assets/activity1.png" alt="민원해결사" class="w-full sm:w-[160px] h-auto sm:h-[120px] object-cover rounded-xl shadow-sm border border-gray-200 flex-shrink-0">
+<div>
+<h4 class="text-lg font-black text-dark mb-2 break-keep flex items-center flex-wrap gap-2">
+<span class="text-gray-600 font-bold text-[15px] bg-gray-100 px-2 py-0.5 rounded">작은 민원도 그냥 넘기지 않는</span>
+<span class="text-point text-xl">민원해결사</span>
+</h4>
+<ul class="text-[15px] font-bold text-gray-800 space-y-1.5 leading-tight">
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">사상주민대회 조직위원장 <span class="text-point">(현)</span></span></li>
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">괘법동 15·16통 경로당 건립 대표 진정인</span></li>
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">사상구 하수구냄새 해결 추진단장</span></li>
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">전국 최초 부산시 보육조례 주민발의 공동집행위원장<span class="text-gray-500 font-medium">(전)</span></span></li>
+</ul>
+</div>
+</div>
+<!-- Activity 2 -->
+<div class="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+<img src="./assets/activity2.png" alt="노동전문가" class="w-full sm:w-[160px] h-auto sm:h-[120px] object-cover rounded-xl shadow-sm border border-gray-200 flex-shrink-0">
+<div>
+<h4 class="text-lg font-black text-dark mb-2 break-keep flex items-center flex-wrap gap-2">
+<span class="text-gray-600 font-bold text-[15px] bg-gray-100 px-2 py-0.5 rounded">노동자 편에서 15년</span>
+<span class="text-point text-xl">노동전문가</span>
+</h4>
+<ul class="text-[15px] font-bold text-gray-800 space-y-1.5 leading-tight">
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">공공연대노동조합 부산본부장 <span class="text-point">(현)</span></span></li>
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">임금체불·부당해고·직장갑질 다수 해결</span></li>
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">비정규직 사업장 교섭 전문</span></li>
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">부산비정규노동센터 소장<span class="text-gray-500 font-medium">(전)</span></span></li>
+</ul>
+</div>
+</div>
+<!-- Activity 3 -->
+<div class="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+<img src="./assets/activity3.png" alt="안전지킴이" class="w-full sm:w-[160px] h-auto sm:h-[120px] object-cover rounded-xl shadow-sm border border-gray-200 flex-shrink-0">
+<div>
+<h4 class="text-lg font-black text-dark mb-2 break-keep flex items-center flex-wrap gap-2">
+<span class="text-gray-600 font-bold text-[15px] bg-gray-100 px-2 py-0.5 rounded">주민 생명 안전이 최우선</span>
+<span class="text-point text-xl">안전지킴이</span>
+</h4>
+<ul class="text-[15px] font-bold text-gray-800 space-y-1.5 leading-tight">
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">새벽별어린이병원 지원 조례 실현</span></li>
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">&lt;사상-하단선 싱크홀 피해보상과 안전 대책 마련을 위한 사상주민대책위원회&gt; 부위원장</span></li>
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">사상구 워킹스쿨버스 조례 제정 운동</span></li>
+<li class="flex items-start"><span class="mr-1.5 text-xs mt-1 text-gray-400">■</span> <span class="break-keep">교통안전지도사 1급</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Candidate Profile & Voting Table -->
+<div class="w-full lg:w-1/2 bg-point rounded-3xl p-6 md:p-8 flex flex-col justify-between text-white shadow-xl relative overflow-hidden">
+<!-- Header -->
+<div class="text-center mb-8 relative z-10">
+<h3 class="text-2xl md:text-3xl font-black mb-2 break-keep">
+구의원은 <span class="text-yellow-300">3등까지 당선</span>
+</h3>
+<h4 class="text-xl md:text-2xl font-bold break-keep">
+1명은 진짜 봉사일꾼 양미자로!
+</h4>
+</div>
+<!-- Inner Content wrapper -->
+<div class="flex flex-col sm:flex-row gap-6 items-center sm:items-end w-full relative z-10">
+<!-- Candidate Image (Bottom aligned) -->
+<div class="w-2/3 sm:w-5/12 flex justify-center -mb-6 md:-mb-8 relative z-10">
+<img src="./assets/profile2.png" alt="양미자 후보" class="w-full max-w-[200px] h-auto object-contain drop-shadow-2xl">
+</div>
+<!-- Voting Table & Message -->
+<div class="w-full sm:w-7/12 flex flex-col z-20 pb-4">
+<div class="bg-white rounded-xl text-dark p-4 shadow-lg mb-6 w-full relative">
+<h5 class="text-center font-bold text-base md:text-lg mb-3">구의원선거 투표용지</h5>
+<div class="border-2 border-gray-800 rounded bg-white overflow-hidden">
+<table class="w-full text-center border-collapse text-sm md:text-base font-bold bg-white">
+<tbody>
+<tr class="border-b border-gray-400">
+<td class="py-1.5 border-r border-gray-400 w-[20%]">1-가</td>
+<td class="py-1.5 border-r border-gray-400 w-[55%] font-medium">OO당</td>
+<td class="py-1.5 w-[25%]"></td>
+</tr>
+<tr class="border-b border-gray-400 bg-gray-50/50">
+<td class="py-1.5 border-r border-gray-400">1-나</td>
+<td class="py-1.5 border-r border-gray-400 font-medium">OO당</td>
+<td class="py-1.5"></td>
+</tr>
+<tr class="border-b border-gray-400">
+<td class="py-1.5 border-r border-gray-400">2-가</td>
+<td class="py-1.5 border-r border-gray-400 font-medium">△△당</td>
+<td class="py-1.5"></td>
+</tr>
+<tr class="border-b border-gray-400 bg-gray-50/50">
+<td class="py-1.5 border-r border-gray-400">2-나</td>
+<td class="py-1.5 border-r border-gray-400 font-medium">△△당</td>
+<td class="py-1.5"></td>
+</tr>
+<!-- Highlighted Row -->
+<tr class="bg-[#f0f9eb] border-t-2 border-gray-800">
+<td class="py-2 border-r border-gray-400 text-lg">5</td>
+<td class="py-2 border-r border-gray-400 text-green-700 font-black tracking-tight"><span class="text-xs mr-1 text-gray-500">진보당</span>양미자</td>
+<td class="py-2 text-point text-xl flex justify-center items-center">
+<div class="w-6 h-6 rounded-full border-[3px] border-point flex items-center justify-center -rotate-12 bg-white/50">
+<span class="text-point font-black text-sm leading-none block -mt-0.5">卜</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="text-center transform -rotate-3 origin-center mt-2">
+<p class="text-xl md:text-[22px] font-black text-white drop-shadow-md break-keep">
+양미자를 선택해주시면<br>당선됩니다!
+</p>
+</div>
+<!-- Lightning icon branding in red box -->
+<div class="text-right mt-6 italic opacity-90 pr-2">
+<span class="text-yellow-300 text-2xl drop-shadow-sm">⚡</span>
+<span class="text-white text-base md:text-lg font-bold">일하는구의원</span>
+<span class="text-white text-2xl md:text-3xl font-black ml-1">5 양미자</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. 지역활동 소개 섹션 (후보 업적) -->
+<section id="activity" class="py-20 md:py-28 bg-gray-50 border-t-2 border-secondary border-opacity-30">
+<div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+  <div class="flex flex-col lg:flex-row gap-8">
+    
+    <!-- LEFT COLUMN -->
+    <div class="w-full lg:w-1/2 flex flex-col bg-white border border-gray-200 shadow-lg">
+      <!-- Title -->
+      <div class="text-center py-5 border-b-2 border-gray-100">
+        <h2 class="text-2xl md:text-[28px] font-black text-point break-keep tracking-tight">주민의 말씀은 불평이 아니라 명령!</h2>
+      </div>
+      
+      <!-- Big Image -->
+      <div class="w-full">
+        <img src="./assets/activity4.png" alt="사상주민대회" class="w-full h-auto object-cover">
+      </div>
+      
+      <!-- Content Area -->
+      <div class="p-6 md:p-8 space-y-10 flex-grow">
+        
+        <!-- Row 1 -->
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+          <img src="./assets/activity5.png" alt="주민투표소" class="w-full sm:w-[180px] h-auto object-cover shadow-sm border border-gray-200 flex-shrink-0">
+          <div class="w-full">
+            <h3 class="text-xl md:text-[22px] font-black text-dark mb-3 break-keep leading-[1.3]">
+              6개월간 주민 8,000여 명을 만나며<br>
+              '<span class="text-point">나의 불편</span>'이 '<span class="text-point">우리의 문제</span>'로
+            </h3>
+            <ul class="text-[15px] font-bold text-gray-800 space-y-1.5 mb-3 leading-snug">
+              <li class="flex items-start"><span class="mr-1.5 text-[10px] mt-1.5 text-dark">▪</span> <span class="break-keep">사상-하단선 안전 개통 및 싱크홀 문제 해결 (1,163명)</span></li>
+              <li class="flex items-start"><span class="mr-1.5 text-[10px] mt-1.5 text-dark">▪</span> <span class="break-keep">하수구 냄새 문제 해결 (954명)</span></li>
+              <li class="flex items-start"><span class="mr-1.5 text-[10px] mt-1.5 text-dark">▪</span> <span class="break-keep">출근 전 어린이병원 지원조례 제정 요구 (800여 명)</span></li>
+            </ul>
+            <p class="text-[15px] font-bold text-point break-keep">2년간 정책제안 2,100여 명, 주민투표 5,600여 명 참여</p>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+          <img src="./assets/activity6.png" alt="주민대회 개최" class="w-full sm:w-[180px] h-auto object-cover shadow-sm border border-gray-200 flex-shrink-0">
+          <div class="w-full">
+            <h3 class="text-xl md:text-[22px] font-black text-dark mb-3 break-keep leading-[1.3]">
+              바뀌겠냐는 주민의 물음에<br>
+              '<span class="text-point">함께 해봅시다!</span>' 답했습니다
+            </h3>
+            <ul class="text-[15px] font-bold text-gray-800 space-y-1.5 leading-snug">
+              <li class="flex items-start"><span class="mr-1.5 text-[10px] mt-1.5 text-dark">▪</span> <span class="break-keep">1, 2회 사상주민대회를 개최해 주민들이 직접 주민요구안을 결정하고 선포했습니다.</span></li>
+              <li class="flex items-start"><span class="mr-1.5 text-[10px] mt-1.5 text-dark">▪</span> <span class="break-keep">사상구청, 사상구의회에 주민요구안을 전달하고 주민 추진단을 만들어 실현해 가고 있습니다.</span></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Bottom Banner -->
+      <div class="bg-point text-white text-center py-6 px-4 mt-auto">
+        <p class="text-lg md:text-[22px] font-bold mb-1 tracking-tight">양미자가 구의원이 되면</p>
+        <p class="text-2xl md:text-[32px] font-black break-keep tracking-tight">주민의 말씀은 곧 정책이 됩니다!</p>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="w-full lg:w-1/2 flex flex-col bg-white border border-gray-200 shadow-lg">
+      <!-- Title -->
+      <div class="text-center py-5 border-b-2 border-gray-100">
+        <h2 class="text-2xl md:text-[28px] font-black text-[#1e2b4d] break-keep tracking-tight">주민과 함께 만든 변화의 시작</h2>
+      </div>
+      
+      <!-- Big Image -->
+      <div class="w-full border-b border-gray-100">
+        <img src="./assets/activity7.png" alt="새벽별 어린이병원 조례 제정" class="w-full h-auto object-cover">
+      </div>
+      
+      <!-- Content Area -->
+      <div class="p-6 md:p-8 space-y-6 flex-grow bg-gray-50/50">
+        
+        <!-- Row 1 (2 Images Side by Side) -->
+        <div class="flex flex-col sm:flex-row gap-5">
+          <!-- Image 8 -->
+          <div class="w-full sm:w-1/2 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.08)] p-2 pb-0 flex flex-col border border-gray-200">
+            <img src="./assets/activity8.png" alt="사상-하단선 간담회" class="w-full h-auto object-cover mb-3 border border-gray-100">
+            <p class="text-[14px] md:text-[15px] font-black text-center text-dark px-1 pb-3 break-keep leading-snug tracking-tight">
+              사상-하단선 안전개통과 싱크홀 대책 마련을 위해 간담회, 기자회견 추진 및 부산시 대책 마련 촉구
+            </p>
+          </div>
+          <!-- Image 9 -->
+          <div class="w-full sm:w-1/2 bg-white shadow-[0_2px_10px_rgba(0,0,0,0.08)] p-2 pb-0 flex flex-col border border-gray-200">
+            <img src="./assets/activity9.png" alt="경로당 건립 진정" class="w-full h-auto object-cover mb-3 border border-gray-100">
+            <p class="text-[14px] md:text-[15px] font-black text-center text-dark px-1 pb-3 break-keep leading-snug tracking-tight">
+              주민들의 요구를 모아 구청 면담<br>괘법 15·16통 경로당 건립 진정 제출
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 2 (Single Wide Image) -->
+        <div class="w-full bg-white shadow-[0_2px_10px_rgba(0,0,0,0.08)] p-2 pb-0 flex flex-col border border-gray-200">
+          <div class="w-full mb-3 border border-gray-100 overflow-hidden">
+             <img src="./assets/activity10.png" alt="하수구 악취 해결" class="w-full h-auto object-cover">
+          </div>
+          <p class="text-[15px] md:text-[16px] font-black text-center text-dark px-2 pb-3 break-keep tracking-tight">
+            하수구 악취·막힘 제보 접수 → 현장 방문 → 구청 담당과에 전달, 개선 요구
+          </p>
+        </div>
+        
+      </div>
+      
+      <!-- Bottom Banner -->
+      <div class="bg-[#d0eaf9] text-[#1e2b4d] text-center py-6 px-4 mt-auto border-t border-[#b6def6]">
+        <p class="text-lg md:text-[22px] font-bold mb-1 tracking-tight">양미자가 구의원이 되면</p>
+        <p class="text-2xl md:text-[32px] font-black break-keep tracking-tight">더 빠르고, 확실하게 바뀝니다!</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</section>
+<!-- 5. 공약 홍보 섹션 -->
+<section id="pledge" class="bg-gray-100 border-t border-gray-200">
+<div class="flex flex-col md:flex-row w-full max-w-[1400px] mx-auto bg-white shadow-lg overflow-hidden">
+<!-- LEFT SIDE: Light Blue Background -->
+<div class="w-full md:w-[45%] bg-[#bde0f6] relative px-6 md:px-10 py-12 md:py-16 flex flex-col justify-between overflow-hidden">
+<!-- Titles -->
+<div class="relative z-10 text-center md:text-left">
+<h2 class="text-3xl md:text-[38px] text-point font-black mb-2 drop-shadow-sm tracking-tight" style="font-family: 'MapoFlowerIsland', 'Pretendard', cursive;">사상주민대회 요구안을</h2>
+<h3 class="text-4xl md:text-[44px] lg:text-[50px] font-black text-[#1e2b4d] tracking-tighter leading-tight break-keep mb-6 md:mb-8">
+양미자의 핵심 공약으로!
+</h3>
+<p class="text-lg md:text-[20px] font-medium text-dark break-keep leading-relaxed relative z-10">
+지난 2년 동안 주민들이 뽑아 주신 정책,<br>반드시 실현하겠습니다!
+</p>
+</div>
+<!-- Candidate Image -->
+<div class="mt-8 md:mt-auto pt-4 md:pt-10 flex justify-center relative z-0">
+<img src="./assets/activity11.png" alt="양미자 후보 공약" class="w-full max-w-[320px] h-auto object-contain -mb-12 md:-mb-16 drop-shadow-2xl">
+</div>
+<!-- Bottom Logo -->
+<div class="absolute bottom-6 left-6 z-10 italic hidden md:block">
+<span class="text-yellow-300 text-2xl drop-shadow-sm">⚡</span>
+<span class="text-[#1e2b4d] text-lg font-bold">일하는구의원</span>
+<span class="text-[#1e2b4d] text-3xl font-black ml-1">5 양미자</span>
+</div>
+</div>
+<!-- RIGHT SIDE: White Background with list -->
+<div class="w-full md:w-[55%] bg-white px-6 md:px-12 lg:px-16 py-12 md:py-16 flex flex-col justify-center space-y-12">
+<!-- Pledge 1 -->
+<div class="flex items-start gap-4 md:gap-6">
+<div class="text-[60px] md:text-[80px] font-black text-[#e84b4b] leading-[0.8] italic shrink-0 mt-2">1</div>
+<div class="w-full">
+<h4 class="text-2xl md:text-3xl font-black text-[#1e2b4d] mb-4 inline-block border-b-4 border-[#e84b4b] pb-1 italic pr-3 tracking-tight">주민의 힘이 커지는 사상</h4>
+<ul class="text-[16px] md:text-[18px] font-bold text-gray-800 space-y-2">
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">사상주민대회 정례화 및 예산 편성</span></li>
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">예산낭비 신고센터 운영</span></li>
+</ul>
+</div>
+</div>
+<!-- Pledge 2 -->
+<div class="flex items-start gap-4 md:gap-6">
+<div class="text-[60px] md:text-[80px] font-black text-[#e84b4b] leading-[0.8] italic shrink-0 mt-2 opacity-80">2</div>
+<div class="w-full">
+<h4 class="text-2xl md:text-3xl font-black text-[#1e2b4d] mb-4 inline-block border-b-4 border-[#e84b4b] pb-1 italic pr-3 tracking-tight">아이키우기 좋은 사상</h4>
+<ul class="text-[16px] md:text-[18px] font-bold text-gray-800 space-y-2">
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">달빛어린이병원 · 새벽별어린이병원 지정</span></li>
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">등하굣길 동행도우미 &lt;워킹스쿨버스&gt; 제도 도입</span></li>
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">통학로 전수 안전 점검</span></li>
+</ul>
+</div>
+</div>
+<!-- Pledge 3 -->
+<div class="flex items-start gap-4 md:gap-6">
+<div class="text-[60px] md:text-[80px] font-black text-[#e84b4b] leading-[0.8] italic shrink-0 mt-2 opacity-80">3</div>
+<div class="w-full">
+<h4 class="text-2xl md:text-3xl font-black text-[#1e2b4d] mb-4 inline-block border-b-4 border-[#e84b4b] pb-1 italic pr-3 tracking-tight">안전한 사상</h4>
+<ul class="text-[16px] md:text-[18px] font-bold text-gray-800 space-y-2">
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">전월세 안심 계약 도움 서비스 추진</span></li>
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">CCTV · 가로등 확충</span></li>
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">보행로 정비</span></li>
+</ul>
+</div>
+</div>
+<!-- Pledge 4 -->
+<div class="flex items-start gap-4 md:gap-6">
+<div class="text-[60px] md:text-[80px] font-black text-[#e84b4b] leading-[0.8] italic shrink-0 mt-2 opacity-80">4</div>
+<div class="w-full">
+<h4 class="text-2xl md:text-3xl font-black text-[#1e2b4d] mb-4 inline-block border-b-4 border-[#e84b4b] pb-1 italic pr-3 tracking-tight">편리하고 쾌적한 사상</h4>
+<ul class="text-[16px] md:text-[18px] font-bold text-gray-800 space-y-2">
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">하수구 냄새 문제 해결</span></li>
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">러너스테이션 유치</span></li>
+<li class="flex items-start"><span class="mr-2 text-[10px] mt-1.5 text-gray-400">■</span> <span class="break-keep">버스정류장 편의시설 개선</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 6. 후보 한마디 섹션 -->
+<section id="lastword" class="bg-gray-100 py-10 md:py-20">
+<div class="max-w-[1200px] mx-auto bg-white shadow-2xl border border-gray-200 overflow-hidden">
+  <!-- Top Full Image -->
+  <img src="./assets/activity12.png" alt="후보 한마디" class="w-full h-auto object-cover border-b-4 border-point">
+  
+  <!-- Middle White Section -->
+  <div class="py-12 md:py-16 px-4 sm:px-6 text-center">
+    <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-[#1e2b4d] mb-6 tracking-tight break-keep">
+      우리 동네 구의원 3명 중<br>
+      1명은 <span class="text-secondarydark border-b-4 border-[#bde0f6] pb-1 inline-block">진보구의원</span>으로!
+    </h2>
+    <p class="text-lg md:text-2xl text-dark font-medium break-keep leading-relaxed space-y-3 mt-8">
+      <span class="block">공천만 받으면 당선되는 구의원은 주민 눈치를 보지 않습니다.</span>
+      <span class="block font-bold">구의원 <span class="text-point inline-block border-b-2 border-point pb-0.5">해외연수부터 중단</span>하고 4년 내내 주민을 향해 발로 뛰겠습니다.</span>
+    </p>
+  </div>
+
+  <!-- Bottom Blue Section -->
+  <div class="bg-[#d0eaf9] flex flex-col md:flex-row items-center justify-between p-8 md:p-12 gap-8 border-t-2 border-[#bde0f6]">
+    <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+      <div class="italic flex items-center justify-center">
+        <span class="text-yellow-400 text-4xl md:text-5xl drop-shadow-sm mr-2">⚡</span>
+        <span class="text-[#1e2b4d] text-2xl md:text-[34px] font-bold leading-none mt-2">일하는구의원</span>
+        <span class="text-[#1e2b4d] text-[70px] md:text-[90px] font-black ml-2 leading-none">5양미자</span>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col justify-center text-[#1e2b4d] font-bold text-[16px] md:text-[19px] space-y-2.5">
+      <div class="flex items-center"><span class="w-2 h-2 bg-point mr-3"></span>진보당 사상구위원장 <span class="text-point font-black ml-1">(현)</span></div>
+      <div class="flex items-center"><span class="w-2 h-2 bg-point mr-3"></span>공공연대노동조합 부산본부장 <span class="text-point font-black ml-1">(현)</span></div>
+      <div class="flex items-center"><span class="w-2 h-2 bg-point mr-3"></span>사상주민대회 조직위원장 <span class="text-point font-black ml-1">(현)</span></div>
+      <div class="flex items-center mt-4"><span class="w-2 h-2 bg-transparent mr-3"></span>부산수산대(현 부경대) 전자공학과 졸업</div>
+      <div class="flex items-center"><span class="w-2 h-2 bg-transparent mr-3"></span>교통안전지도사 1급</div>
+      <div class="flex items-center"><span class="w-2 h-2 bg-transparent mr-3"></span>덕포 자유아파트 6동 주민</div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- 7. 푸터 -->
+<footer class="bg-white border-t-2 border-gray-200 pt-10 pb-12 mt-auto">
+<div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+<div class="flex flex-col lg:flex-row justify-between gap-10">
+  
+  <!-- Left: Donation -->
+  <div class="w-full lg:w-1/2 flex flex-col space-y-4 border-b lg:border-b-0 lg:border-r border-gray-300 pb-8 lg:pb-0 lg:pr-8">
+    <h4 class="text-xl md:text-2xl font-black text-[#1e2b4d] tracking-tight">미자의 든든한 후원자가 되어주세요</h4>
+    <div class="flex flex-wrap gap-2 items-center text-lg md:text-xl font-bold">
+      <span class="bg-white border-2 border-[#1e2b4d] text-[#1e2b4d] px-3 py-1">양미자 후원계좌</span>
+      <span class="bg-[#1e2b4d] text-white px-3 py-1.5 cursor-pointer hover:opacity-80 transition-opacity" id="footer-account" onclick="copyAccount()" title="클릭하여 계좌번호 복사">부산 101-2096-0117-08</span>
+    </div>
+    <div class="flex flex-wrap gap-3 items-center mt-2">
+      <span class="bg-[#1e2b4d] text-white px-3 py-1 font-bold text-sm">후원문의</span>
+      <span class="text-[#1e2b4d] font-bold text-lg md:text-xl cursor-pointer hover:underline" onclick="copyPhoneNumber(this.innerText)" title="클릭하여 번호 복사">010-2577-3348</span>
+      <span class="text-gray-500 text-xs md:text-sm font-medium ml-1">※ 10만원까지는 연말정산 시 전액 세액공제 됩니다.</span>
+    </div>
+  </div>
+
+  <!-- Right: Contact & SNS -->
+  <div class="w-full lg:w-1/2 flex flex-col space-y-4">
+    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-lg md:text-xl font-bold text-[#1e2b4d]">
+      <span>민원상담·정책제안</span>
+      <span class="hidden sm:inline-block text-gray-300">|</span>
+      <span class="text-point cursor-pointer hover:underline" onclick="copyPhoneNumber(this.innerText)" title="클릭하여 번호 복사">010-4874-6322</span>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-[15px] md:text-lg font-bold text-[#1e2b4d]">
+      <span>선거사무소</span>
+      <span class="hidden sm:inline-block text-gray-300">|</span>
+      <span>부산 사상구 사상로 249(괘법동), 3층</span>
+    </div>
+    <div class="flex items-center gap-4 mt-2 pt-2">
+      <div class="flex items-center gap-1.5 bg-[#fae100] px-3 py-1 rounded-full text-sm font-bold text-dark shadow-sm">
+        <span>💬</span> oreum77
+      </div>
+      <a href="https://www.facebook.com/oreum44/?locale=ko_KR" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 bg-[#1877f2] px-3 py-1 rounded-full text-sm font-bold text-white shadow-sm hover:opacity-80 transition-opacity">
+        <span class="font-serif">f</span> oreum44
+      </a>
+      <a href="https://www.instagram.com/sasang_mija/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] px-3 py-1 rounded-full text-sm font-bold text-white shadow-sm hover:opacity-80 transition-opacity">
+        <span>📷</span> sasang_mija
+      </a>
+    </div>
+  </div>
+
+</div>
+<div class="text-[12px] text-gray-400 font-medium mt-10 text-center md:text-left">
+이 예비후보자홍보물은 공직선거법 제60조의3 제1항 제4호에 따라 제작한 것입니다.<br>
+연합문화기획 부산시 부산진구 신천대로 65번길 54, 2층 051-631-3684
+</div>
+</div>
+</footer>
+<!-- 7. 자바스크립트 스크립트 -->
+<script>
+// --- 모바일 메뉴 로직 ---
+const btn = document.getElementById('mobile-menu-btn');
+const menu = document.getElementById('mobile-menu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.add('hidden');
+  });
+});
+
+// --- 전화번호 복사 로직 ---
+function copyPhoneNumber(numberStr) {
+  const tempElem = document.createElement('textarea');
+  tempElem.value = numberStr;
+  document.body.appendChild(tempElem);
+  tempElem.select();
+  try {
+    document.execCommand('copy');
+    alert('전화번호가 정상적으로 복사되었습니다.');
+  } catch(err) {
+    alert('복사에 실패했습니다. 번호를 직접 복사해주세요.');
+  }
+  document.body.removeChild(tempElem);
+}
+
+// --- 계좌번호 복사 로직 ---
+function copyAccount() {
+  const accountText = document.getElementById('account-number').innerText;
+  const tempElem = document.createElement('textarea');
+  tempElem.value = accountText;
+  document.body.appendChild(tempElem);
+  tempElem.select();
+  try {
+    document.execCommand('copy');
+    alert('계좌번호가 정상적으로 복사되었습니다. \n따뜻한 후원에 진심으로 감사드립니다!');
+  } catch(err) {
+    alert('복사에 실패했습니다. 번호를 직접 복사해주세요.');
+  }
+  document.body.removeChild(tempElem);
+}
+
+// --- 후원 상세 안내 아코디언 로직 ---
+const donateBtn = document.getElementById('donate-detail-btn');
+const donateContent = document.getElementById('donate-detail-content');
+const donateIcon = document.getElementById('donate-detail-icon');
+
+donateBtn.addEventListener('click', () => {
+  const isClosed = !donateContent.classList.contains('active');
+  if(isClosed) {
+    donateContent.classList.add('active');
+    donateIcon.classList.add('rotate-180');
+  } else {
+    donateContent.classList.remove('active');
+    donateIcon.classList.remove('rotate-180');
+  }
+});
+</script>
+</body>
+</html>
